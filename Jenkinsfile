@@ -8,4 +8,5 @@ pipeline {
                 sh 'ssh root@olivetin-int "uname -a" '
             }
         }
+    }
 }
