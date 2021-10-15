@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('CI Test') {
             steps {
-                copyArtifacts(projectName: "/OliveTin/OliveTin-rc-builder/main", filter: "dist/OliveTin-*linux-amd64.tar.gz")
+                copyArtifacts(projectName: "/OliveTin/OliveTin-rc-builder/main", filter: "dist/OliveTin-*linux-amd64.tar.gz,config.yaml")
                 
                 sh "make"
                 
