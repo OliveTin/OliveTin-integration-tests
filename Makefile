@@ -9,6 +9,6 @@ container:
   
 cypress:
 	npm install
-	./node_modules/.bin/cypress run --headless -c baseurl=http://localhost:1337
+	NO_COLOR=1 ./node_modules/.bin/cypress run --headless -c baseUrl=http://localhost:1337
 
 .PHONY: cypress container
