@@ -1,4 +1,4 @@
-default:
+container:
 	rm -rf *.tar.gz 
 	mv dist/*.tar.gz ./
 	tar xavf OliveTin-*linux-amd64.tar.gz
@@ -10,3 +10,5 @@ default:
 cypress:
 	npm install
 	cypress run --headless -c baseurl=http://localhost:1337
+
+.PHONY: cypress container
