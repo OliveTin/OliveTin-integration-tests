@@ -7,3 +7,6 @@ default:
 	docker create --name olivetin -p 1337:1337 -v `pwd`/config/:/config/ olivetin 
 	docker start olivetin
   
+cypress:
+	npm install
+	cypress run --headless -c baseurl=http://localhost:1337
