@@ -9,6 +9,6 @@ container:
   
 cypress:
 	npm install
-	NO_COLOR=1 ./node_modules/.bin/cypress run --headless -c baseUrl=http://localhost:1337 && true
+	NO_COLOR=1 ./node_modules/.bin/cypress run --headless -c baseUrl=http://localhost:1337 || true
 
 .PHONY: cypress container
