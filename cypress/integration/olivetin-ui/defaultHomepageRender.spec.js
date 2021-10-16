@@ -8,7 +8,7 @@ describe('Homepage rendering', () => {
   })
 
   it('Default buttons are rendered', () => {
-    cy.get("button").should('have.length', 3)
+    cy.get("button").should('have.length', 8)
   })
 });
 
