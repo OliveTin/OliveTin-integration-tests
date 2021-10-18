@@ -1,5 +1,5 @@
 container:
-	rm -rf *.tar.gz 
+	rm -rf *.tar.gz OliveTin-*
 	mv dist/*.tar.gz ./
 	tar xavf OliveTin-*linux-amd64.tar.gz
 	docker rm -f olivetin && docker rmi -f olivetin
