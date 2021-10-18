@@ -1,7 +1,8 @@
 {
-  "name": "olivetin-testing-ui-cypress",
+  "name": "olivetin-integration-tests",
   "version": "1.0.0",
-  "description": "",
+  "repository": "https://github.com/OliveTin/OliveTin-integration-tests",
+  "description": "The cypress WebUI tests",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

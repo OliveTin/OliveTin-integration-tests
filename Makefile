@@ -8,10 +8,7 @@ container:
 
 cypress:
 	npm install
-	cp -f /config/config.{general,}.yaml
-	docker start olivetin
-	NO_COLOR=1 ./node_modules/.bin/cypress run --headless -c baseUrl=http://localhost:1337 || true
-	docker kill olivetin
-		
+	cypressRun.sh "general"
+	cypressRun.sh "hiddenNav"		
 
 .PHONY: cypress container
