@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('CI Test') {
             steps {
-				cleanWs()
+				checkout scm: clean: true
 
                 copyArtifacts(projectName: "/OliveTin/OliveTin-rc-builder/main", filter: "configs/**,integration-tests/**,dist/OliveTin-*linux-amd64.tar.gz")
                 
